@@ -2,11 +2,19 @@ const intro = document.querySelector('.intro')
 const instr = document.querySelector('.ins')
 const button = document.querySelector('.start')
 const dont = document.querySelector('.dont')
+const pay = document.querySelector('.pay')
+const payment = document.querySelector('.payment')
+payment.addEventListener('click', function(){
+    document.location.assign('https://paypal.me/pieroste?locale.x=en_US')
+
+})
 var y = document.createElement('img')
 let virus = 89
 intro.classList.add('change');
 instr.classList.add('change2');
 button.classList.add('change3')
+payment.classList.add('change4')
+pay.classList.add('change5')
 let wait = 20
 
 y.setAttribute('src',
