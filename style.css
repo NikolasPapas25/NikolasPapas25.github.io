@@ -1,0 +1,15 @@
+.change{
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    background-color: rgb(109, 26, 187);
+}
+.change2{
+    color: darkgray;
+    font-size: 40px;
+    background-color: rgb(109, 26, 187);
+}
+.change3{
+    color: white;
+    font-size: 40px;
+    background-color: black;
+}
