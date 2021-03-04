@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #Title{
+        color: #eee;
+        
+    }
+    #Tabs li a{
+        text-decoration: none;
+    }
+    #HomeTab{
+        position: fixed;
+       right: 75%;
+        border-radius: 25px;
+        text-shadow: 2px 2px 5px rgb(255, 255, 255);
+        font-size: 40px;
+        text-decoration: none;
+        }
+
+    a.HomeTab{
+        color: rgb(248, 248, 248);
+    }
+    a.HomeTab:hover{
+        color: black;
+    }
+    #AboutTab{
+        position: fixed;
+        right: 50%;
+        text-shadow: 2px 2px 5px rgb(252, 248, 248);
+        font-size: 40px;
+    }
+    a.AboutTab{
+        color: rgb(248, 248, 248);
+    }
+    a.AboutTab:hover{
+        color: black;
+    }
+    #DonateTab{
+
+        position: fixed;
+        right: 25%;
+        text-shadow: 2px 2px 5px rgb(255, 252, 252);
+        font-size: 40px;
+    }
+    a.DonateTab{
+        color: rgb(248, 248, 248);
+    }
+    a.DonateTab:hover{
+        color: black;
+    }
+    #myInput {
+    background-image: url('icon.png'); /* Add a search icon to input */
+    background-position: 2px 4px; /* Position the search icon */
+    background-size: 28px;
+    background-repeat: no-repeat; /* Do not repeat the icon image */
+    width: 90%; /* Full-width */
+    font-size: 16px; /* Increase font-size */
+    padding: 12px 20px 12px 40px; /* Add some padding */
+    border: 1px solid #ddd; /* Add a grey border */
+    margin-bottom: 12px; /* Add some space below the input */
+    opacity: 0.83;
+  }
+  #myUL{
+    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+  #myUL li a {
+  
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 18px; /* Increase the font-size */
+  color: rgb(0, 0, 0); /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+  opacity: 0.3;
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+#body{
+    background: url('cool.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+    </style>
+</head>
+<body id="body">
+    <header>
+        <nav>
+            <ul id="Tabs">
+                <li id="HomeTab"><a href="Home.html" class="HomeTab">Home</a></li>
+                <li id="AboutTab"><a href="Aboutme.html" class="AboutTab">About</a></li>
+                <li id="DonateTab"><a href="Feedback.html" class="DonateTab">Feedback!</a></li>
+            </ul>
+        </nav>
+        <h1 id="Title">Home</h1>
+        <input type="text" placeholder="Search For Items..." id="myInput" onkeyup="myFunction()">
+    </header>
+    <ul id="myUL">
+        <li><a href="iphone.html">Iphone</a></li>
+        <li><a href="">Samsung</a></li>
+      
+        <li><a href="">Ipad</a></li>
+        <li><a href="">Galaxy Tablet</a></li>
+      
+        <li><a href="">SIM card</a></li>
+        <li><a href="">Iphone case</a></li>
+        <li><a href="">Samsung case</a></li>
+        <li><a href="">Iphone Charger</a></li>
+        <li><a href="">Samsung Charger</a></li>
+      </ul>
+    <script src="/Home.js"></script>
+    
+</body>
+</html>
