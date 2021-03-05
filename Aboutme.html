@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
     <style>
         #Title{
             color: #eee;
             
         }
+        #Tabs li a{
+        text-decoration: none;
+    }
         #HomeTab{
             position: fixed;
            right: 75%;
             border-radius: 25px;
             text-shadow: 2px 2px 5px rgb(255, 255, 255);
             font-size: 40px;
+            list-style-type: none;
+            font-family: 'Arvo', serif;
             }
     
         a.HomeTab{
@@ -23,18 +30,22 @@
         }
         a.HomeTab:hover{
             color: black;
+            font-size: 45px;
         }
         #AboutTab{
             position: fixed;
             right: 50%;
             text-shadow: 2px 2px 5px rgb(252, 248, 248);
             font-size: 40px;
+            list-style-type: none;
+            font-family: 'Arvo', serif;
         }
         a.AboutTab{
             color: rgb(248, 248, 248);
         }
         a.AboutTab:hover{
             color: black;
+            font-size: 45px;
         }
         #DonateTab{
     
@@ -42,12 +53,16 @@
             right: 25%;
             text-shadow: 2px 2px 5px rgb(255, 252, 252);
             font-size: 40px;
+            list-style-type: none;
+            font-family: 'Arvo', serif;
         }
         a.DonateTab{
             color: rgb(248, 248, 248);
+            
         }
         a.DonateTab:hover{
             color: black;
+            font-size: 45px;
         }
         #myInput {
         background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -81,7 +96,7 @@
     }
     
     #body{
-        background: url('cool.jpg') no-repeat center center fixed; 
+        background-color: rgb(26, 25, 25);
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -92,8 +107,8 @@
 <body id="body">
     <header>
         <nav>
-            <ul>
-                <li id="HomeTab"><a href="index.html" class="HomeTab">Home</a></li>
+            <ul id="Tabs">
+                <li id="HomeTab"><a href="home.html" class="HomeTab">Home</a></li>
                 <li id="AboutTab"><a href="Aboutme.html" class="AboutTab">About</a></li>
                 <li id="DonateTab"><a href="Feedback.html" class="DonateTab">Feedback!</a></li>
             </ul>

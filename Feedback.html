@@ -5,10 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+
     <style>
         #Title{
             color: #eee;
             
+        }
+        @keyframes mymove3{
+            0%{ font-size: 175%}
+            50%{ font-size: 200%;}
+            75%{font-size: 215; box-shadow: 5px 5px 15px red;}
+        }
+        #Tabs li a{
+        text-decoration: none;
         }
         #HomeTab{
             position: fixed;
@@ -16,25 +26,33 @@
             border-radius: 25px;
             text-shadow: 2px 2px 5px rgb(255, 255, 255);
             font-size: 40px;
-            }
+            font-family: 'Arvo', serif;
+            list-style-type: none;
+           
+        }
+           
     
         a.HomeTab{
             color: rgb(248, 248, 248);
         }
         a.HomeTab:hover{
             color: black;
+            font-size: 45px;
         }
         #AboutTab{
             position: fixed;
             right: 50%;
             text-shadow: 2px 2px 5px rgb(252, 248, 248);
             font-size: 40px;
+            font-family: 'Arvo', serif;
+            list-style-type: none;
         }
         a.AboutTab{
             color: rgb(248, 248, 248);
         }
         a.AboutTab:hover{
             color: black;
+            font-size: 45px;
         }
         #DonateTab{
     
@@ -42,12 +60,15 @@
             right: 25%;
             text-shadow: 2px 2px 5px rgb(255, 252, 252);
             font-size: 40px;
+            font-family: 'Arvo', serif;
+            list-style-type: none;
         }
         a.DonateTab{
             color: rgb(248, 248, 248);
         }
         a.DonateTab:hover{
             color: black;
+            font-size: 45px;
         }
         #myInput {
         background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -81,7 +102,7 @@
     }
     
     #body{
-        background: url('cool.jpg') no-repeat center center fixed; 
+        background-color: rgb(26, 25, 25); 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
@@ -128,20 +149,28 @@
         font-size: 175%;
         text-shadow:2px  rgb(3, 3, 3);
     }
+    #Enter:hover{
+        text-shadow: 2px 2px 20px white;
+        animation: mymove3 2s infinite;
+    }
     #conti{
         position: fixed;
         bottom: 32%;
         right: 50%;
         font-size: 175%;
         text-shadow:2px  rgb(3, 3, 3);
+        
+    }
+    #conti:hover{
+        animation: mymove3 2s infinite
     }
         </style>
 </head>
 <body id="body">
     <header>
         <nav>
-            <ul>
-                <li id="HomeTab"><a href="index.html" class="HomeTab">Home</a></li>
+            <ul id="Tabs">
+                <li id="HomeTab"><a href="home.html" class="HomeTab">Home</a></li>
                 <li id="AboutTab"><a href="Aboutme.html" class="AboutTab">About</a></li>
                 <li id="DonateTab"><a href="Feedback.html" class="DonateTab">Feedback!</a></li>
             </ul>
@@ -152,7 +181,6 @@
     <input type="text" placeholder="Email.." id="EmInput">
     <p id="Password">PLease enter a password</p>
     <input type="text" placeholder="Password.." id="Pass">
-    <button id="Enter" onclick="Get_Data()">Enter</button>
     <button id="conti" onclick="Read_Data()">Continue</button>
     <script src="./Feedback.js"></script>
 </body>
