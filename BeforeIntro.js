@@ -7,8 +7,4 @@ const password = pass.value
 localStorage.setItem('username', username)
 localStorage.setItem('pass', password)
 const btn = document.getElementById('btn')
-window.setTimeout(closew, 1000)
-}
-function closew(){
-    window.close()
 }
